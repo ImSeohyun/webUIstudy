@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <script>
+        //불린 객체 : 논리 데이터 관리
+
+        //false로 처리되는 데이터
+        var d = new Boolean(0);
+        var d = new Boolean("");
+        var d = new Boolean(null);
+        var d = new Boolean(undefined);
+        var d = new Boolean(NaN);
+        console.log(d);
+        console.log(d,toString());
+        console.log(d.valueOf());
+    
+        if(d.toString()){ //문자열이기 때문에 true
+        console.log("거짓1");
+        }
+        if(d.valueOf()){ //boolean으로 false이기 때문에 출력 안됨
+        console.log("거짓2");
+        }
+
+        //true로 처리되는 데이터
+        var d = new Boolean(10);
+        var d = new Boolean("hi");
+        console.log(d,toString());
+        console.log(d.valueOf());
+</script>
+    
+</head>
+<body>
+hi
+</body>
+</html>

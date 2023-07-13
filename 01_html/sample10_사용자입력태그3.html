@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+    <form action="target.html" method="get">
+       이름 <input type="text" name="username"><br>
+       비번 <input type="password" name="pwd"><br>
+       <input type="radio" name="gender" value="남">남
+       <input type="radio" name="gender" value="여">여<br>
+       
+       <input type="checkbox" name="fruit">사과
+       <input type="checkbox" name="fruit">포도
+       <input type="checkbox" name="fruit">수박
+        <br>
+       <input type="color" name="color"> 색상표
+       <input type="date" name="date"> 달력
+        <br>
+       <!-- @ 필수 -->
+       <input type="email" name="email" placeholder="메일">
+       <br>
+       <input type="file" name="file">
+       <input type="file" name="file" accept="image/*">
+       <input type="file" name="file" multiple>
+       <br>
+
+       <!-- 사용자에게 태그를 보여주지 않고 임의의 값을 서버에 전달할 때 -->
+       <input type="hidden" name="address" value="seoul">
+
+       <input type="number" name="count"><br>
+       <input type="number" name="count" min="0" max="5"><br>
+       <input type="number" name="count" step="5"><br>
+
+       <input type="range" name="m_range" min="1" max="10"><br>
+       <input type="search" name="m_search"><br>
+
+       <select name="cars" id="cars">
+        <option value="volvo">Volvo</option>
+        <option value="mercedes">Mercedes</option>
+        <option value="audi">Audi</option>
+      </select><br>
+        
+      
+      <textarea name="message" cols="30" rows="10">
+        i was a car
+      </textarea>
+      
+       <input type="submit" name="로그인2">
+       <input type="reset" >
+    </form>
+
+    
+</body>
+</html>

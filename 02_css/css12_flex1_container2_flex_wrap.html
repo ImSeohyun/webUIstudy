@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            background-color: powderblue;
+           display: flex;
+           /* 컨테이너 크기를 줄이면 item크기도
+           자동으로 줄어듦
+           주축에 한꺼번에 보여주기 위해.
+           기본값 nowrap
+           */
+           /* 아이템 크기 동일하게 맞추기 위해 개행 */
+           flex-wrap: wrap;
+        }
+        .item{
+            background-color: tomato;
+            color:white;
+            border:1px solid white;
+            width: 300px;
+        }
+    </style>
+    
+    <body>
+        <div class="container">
+            <div class="item">111</div>
+            <div class="item">222</div>
+            <div class="item">333</div>
+            <div class="item">444</div>
+            <div class="item">555</div>
+        </div>
+    </body>
+</html>

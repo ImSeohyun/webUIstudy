@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box{
+            border: 1px solid black;
+            width: 50%;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="box">
+        <h1>Payment Form</h1> <hr>
+        <p>Required fields are followed by *</p>
+
+        <form action="./01_html/target.html">
+        <h2>Contact information</h2>
+        Name: * <input type="text" name="name" id="username" placeholder="smith" required>
+
+        <fieldset>
+            <legend>Gender *</legend>
+            <input type="radio" name="gender" value="male">Male
+            <input type="radio" name="gender" value="female">Femle
+            <input type="radio" name="gender" value="other">Other
+        </fieldset>
+        Address: <br>
+        <textarea name="address" cols="30" rows="10">Enter the address</textarea>
+        <br>
+        Email: *<input type="email" name="email" placeholder="smith@gmail.com" required>
+        <br>
+        Pincode: *<input type="text" name="pincode" placeholder="123456" required>
+        <hr>
+        <h2>Payment Information</h2>
+        Card Type: *
+        <select name="cardtype" required> 
+            <option value="" selected>--Select a Card Type--</option>
+            <option value="Rupay">Rupay</option>
+            <option value="Mastercard">Mastercard</option>
+            <option value="Visa">Visa</option>
+        </select><br>
+        Card number: *<input type="text" name="cardnum" placeholder="1111-2222-333-4444" required><br>
+        Expiration Date: *<input type="date" name="expiredate" required><br>
+        CVV: *<input type="text" name="CVV" required><br>
+        <button>Pay Now</button>
+
+        </form>
+
+    </div>
+
+
+</body>
+</html>

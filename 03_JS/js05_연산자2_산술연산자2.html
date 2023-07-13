@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <script>
+        //산술연산자
+        //문자열 vs 수치
+
+        var n="10";
+        var nn = 3;
+        console.log("- ", n-nn); //7
+        console.log("/ ", n/nn); //30
+        console.log("% ", n%nn); //3.3333
+        console.log("* ", n*nn); //1
+
+        console.log("+ ", n*nn); //103 ->연결
+
+        //문자열과 문자열(비문자열)의 + 연산은 
+        //연결되어 문자열로 반환
+        var x = "hello" + " world"; //hello world
+        var x2 = "hello " + 10+20; //hello1020
+        var x3 = 10+ 20+ "hello "; //30hello
+        console.log(x);
+        console.log(x2);
+        console.log(x3);
+
+        console.log("10"+3); //103
+        console.log(Number.parseInt("10")+3); //13
+        
+        var num = parseInt("10");
+        console.log(num+3);//13
+
+        // undefined = 변수를 선언만 한 경우 (초기화 안된 경우)
+        // null = 명시적으로 변수에 값 없음을 표시할 때
+        // NaN = Not A Number, Number.parseInt(숫자로 변경못하는 값);
+    </script>
+    
+</head>
+<body>
+hi
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        var xxx = function(){
+            console.log("button");
+        };
+
+        function init(){
+            document.querySelector("#ck").onclick=xxx;//콜백함수로 처리
+        }
+    </script>
+
+</head>
+<body onload="init()">
+    <button id="ck">이미지 변경</button>
+</body>
+</html>

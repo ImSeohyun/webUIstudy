@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <script>
+        //array 객체 : 배열 관리
+
+        var arr = [1,2,3,4,5,6];
+        console.log(arr.toString());
+
+        //거꾸로 -> arr이 달라짐
+        arr.reverse();
+        console.log(arr.toString());
+
+        //부분배열 -> arr2에 arr변형 할당
+        var arr2 = arr.slice(0,4); //0~3
+        console.log(arr.toString(),"  " ,arr2.toString());
+
+        //특정값의 위치값 반환
+        console.log(arr.indexOf(3));
+        console.log(arr.indexOf(10)); //없으면 -1 반환
+
+        //정렬
+        var arr = [2,4,3,6,5];
+        arr.sort();
+        arr.sort(function(a,b){return b-a});
+        console.log(arr.toString()); //기본 오름차순
+
+        var arr = [1,4,3,7,5,4];
+        arr.sort(function(a,b){return a-b}); //오름차순
+        console.log(arr.toString());
+        arr.sort(function(a,b){return b-1}); //내림차순
+        console.log(arr.toString());
+
+        // 김/이/박 -> split("/") -> ['김','이','박']
+        //['김','이','박'] -> join("/") -> 김/이/박
+        var arr =['김','이','박'];
+        var s =arr.join(); //기본은 쉼표
+        var s =arr.join("/"); 
+        var s =arr.join(" and "); 
+        console.log(s);
+
+        //배열 채우기 (원본 변경)
+        var arr = [4,3,6,7,8,1];
+        arr.fill(100);
+        console.log(arr.toString());
+        arr.fill(90,1,4); //90의 숫자를 1부터 4미만의 위치까지 채우기
+        console.log(arr.toString());
+        
+
+
+
+    </script>
+</head>
+<body>
+hi
+</body>
+</html>

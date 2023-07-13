@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        // DOM level 0의 고전 방식으로 이벤트 처리
+        //document.querySelector(선택자).onxxx=익명함수;
+        function init(){
+            document.querySelector("#ck").onclick=function(){
+                var p = document.querySelector("#xxx");
+                console.log(p);
+                p.innerText="World";
+            };
+            
+
+        }
+    </script>
+
+</head>
+<body onload="init()">
+    <p id="xxx"><span>hello</span></p>
+    <button id="ck">변경</button>
+</body>
+</html>

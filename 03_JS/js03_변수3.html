@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <script>
+        // 변수 scope -> 변수 인식 범위
+
+//블럭({}) 가진 요소들: 함수, if문, 반복문, 클래스....
+        if(true) {
+            var n =10;
+            let n2 =20;
+            console.log(n);
+            console.log(n2);
+        }        
+        console.log("var블럭 밖: ",n);
+        // console.log("let블럭 밖: ",n2);
+
+        function fun(){
+            var x=100;
+            let x2=100;
+            console.log("함수 var블럭: ",x);
+            console.log("함수 let블럭: ",x2);
+        }
+        // console.log("함수 var 블럭 밖: ",x);
+        // console.log("함수 let블럭 밖: ",x2);
+        fun();
+
+        //var 중복 선언 가능 
+        var a =2;
+        var a =10;
+        
+        //let 중복 선언 불가능
+        // let b =1;
+        // let b =2;
+
+    </script>
+    
+</head>
+<body>
+hi
+</body>
+</html>

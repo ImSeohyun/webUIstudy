@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            background-color: powderblue;
+            display: flex;
+            flex-direction: column;
+        }
+        .item{
+            background-color: tomato;
+            color:white;
+            border:1px solid white;
+            
+            /* item에 flex-grow:1로 지정하면 
+            균등하게 전체 너비를 채움 */
+            flex-grow: 1;
+        }
+
+    </style>
+    
+    <body>
+        <div class="container">
+            <div class="item" >111</div>
+            <div class="item" >222</div>
+            <div class="item" >333</div>
+            <div class="item" >444</div>
+            <div class="item" >555</div>
+        </div>
+    </body>
+</html>

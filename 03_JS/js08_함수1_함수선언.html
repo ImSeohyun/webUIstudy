@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <script>
+        //함수 function
+
+        // 1. 함수 선언식 (이름 있는)
+        console.log("1");
+
+        // 가. 파라미터 없고 리턴값 없음
+        function fun(){
+            console.log("fun");
+        }
+        fun();
+
+        // 나. 파라미터 있고 리턴값 없음
+        function fun2(n, n2){
+            console.log("fun2",n,n2);
+        }
+        //호출 시 변수 갯수(argument list)가 달라도 됨
+        fun2(10,"홍길동"); //fun2 10 홍길동
+        fun2(); //fun2 undefined undefined
+        fun2(1,2,"홍길동2") //fun2 1 2 -> 앞 2개만 인식
+
+        // 다. 파라미터 없고 리턴값 있음
+        function fun3(){
+            console.log("fun3");
+            return 100; 
+        //리턴값은 반드시 하나만 사용 가능. 
+        //만약 여러값 리턴하고자 하면 배열 등에 저장해 리턴
+        }
+        var result = fun3();
+        console.log(result);
+
+        //라. 파라미터 있고 리턴값 있음
+        function fun4(n,n2){
+            console.log("fun4",n,n2);
+            return n+n2;
+        }
+        var result = fun4(10,20);
+        console.log(result);
+
+        var x = Number.parseInt("10");
+        var x2 = prompt("정수 입력");
+
+
+        console.log("end");
+
+
+
+    
+    </script>
+</head>
+<body>
+hi
+</body>
+</html>

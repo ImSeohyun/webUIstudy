@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <script>
+        // 증감 연산자
+
+        // 1. 전치
+        var n =5;
+        ++n; // n = n+1
+        console.log("전치: ",n);
+        
+        // 2. 후치
+        var n =5;
+        n++; //n = n+1
+        console.log("후치: ",n);
+
+        //독자적으로 썼기 때문에 1,2 결과값이 똑같음
+
+        //주의할 점
+        //다른 연산자와 같이 사용 시 전치/후치에 따라 할당 값이 달라짐
+
+        // 1. 전치
+        var n = 5;
+        var x = ++n; // n = n+1
+        // n값 +1 후 x에 할당
+        console.log("전치: ",x);
+        
+        // 2. 후치
+        var n =5;
+        var x = n++; //n = n+1
+        // x에 할당 후 n값+1
+        console.log("후치: ",x);
+
+    </script>
+    
+</head>
+<body>
+hi
+</body>
+</html>

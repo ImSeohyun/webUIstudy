@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <script>
+        //함수 function
+
+        // 가. default 파라미터: undefined 방지
+        function fun(n, n2){
+            console.log("fun",n,n2);
+        }
+        fun(10,"홍길동"); //fun 10 홍길동
+        fun(); //fun undefined undefined
+        fun(20); //fun 20 undefined
+
+        //나. 가변인자 (...변수) -> 배열로 처리
+        function fun2(n,n2,...n3){
+            console.log("fun2",n,n2,n3);
+        }
+        fun2(1,2,3); // fun2 1 2 [3]
+        fun2(1,2,3,4,5,6); //fun2 1 2 [3,4,5,6]
+
+        //다. 혼합(default 파라미터 + 가변인자)
+        function fun3(n,n2=0,...n3){
+            console.log(n,n2,n3);
+        }
+        fun3(1); // 1 [0] []
+        fun3(1,2,3);// 1 2 [3]
+        fun2(1,2,3,4,5,6); // 1 2 [3,4,5,6]
+
+
+    
+    </script>
+</head>
+<body>
+hi
+</body>
+</html>

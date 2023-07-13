@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+    <h2>get 방식</h2>
+    <form action="target.html" method="get">
+        나이: <input type="text" id="age" value="10" name="age" readonly><br>
+        <label for="name">이름</label> 
+        <input type="text" id="name" name="username" autofocus><br>
+        <input type="text" placeholder="주소입력" name="address" id="address" required><br>
+
+        <button>로그인</button>
+        <input type="button" value="로그인2">
+        <!-- type button은 submit 안됨 -->
+        <input type="submit" value="로그인3">
+
+    </form>
+    <h2>post 방식</h2>
+    <form action="target.html" method="post">
+        나이: <input type="text" id="age" value="10" name="age" readonly><br>
+        <label for="name">이름</label> 
+        <input type="text" id="name" name="username" autofocus><br>
+        <input type="text" placeholder="주소입력" name="address" id="address" required><br>
+
+        <button>로그인</button>
+    </form>
+
+    
+</body>
+</html>

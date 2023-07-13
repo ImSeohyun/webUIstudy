@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+<script>
+   /*
+       배열중에서 최대값 구하기
+   */
+  function max(n){
+    var m = -1;
+    for(var i=0; i<n.length;i++){
+        if(m<n[i]){
+            m = n[i];
+        }
+    }
+    return m;
+  }
+
+   var arr = [ 11, 2, 33, 54, 5];
+   var m = max(arr);
+   console.log("최대값:", m );
+</script>
+
+</head>
+<body>
+
+</body>
+</html>

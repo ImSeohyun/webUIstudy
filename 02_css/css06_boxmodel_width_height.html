@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    /* 
+    1. width와 height는 기본적으로 설정 않으면 
+       기본영역의 크기로 설정된다 
+    2. inline 스타일은 기본적으로 width,height가 적용 안된다.
+       적용할려면 inline-block 써야함
+    */
+    div, span {
+        background-color: yellow;
+    }
+    #a2,#b2 {
+        width: 50px;
+        height: 50px;
+        background-color: aqua;
+    }
+    #c{
+        width: 30px;
+        height: 30px;
+        background-color: violet;
+    }
+    </style>
+</head>
+<body>
+    <div id="a">a</div>
+    <div id="b">b</div>
+    
+    <span>hello</span>
+    
+    <div id="a2">a2</div>
+    <div id="b2">b2</div>
+    <span id="c">hello2</span>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    /* 자식 없는 요소 반환 :empty */
+    /* 비어있기 때문에 영역 지정해야 색이 보임 */
+    p:empty {
+        background-color: red;
+        width: 10px;
+        height: 10px;
+    }
+    div{
+        width:20px;
+        height: 20px;
+        background-color: violet;
+    }
+    </style>
+</head>
+<body>
+    <p></p>
+    <p>2</p>
+    <p>3</p>
+    
+    <div>
+    </div>
+</body>
+</html>

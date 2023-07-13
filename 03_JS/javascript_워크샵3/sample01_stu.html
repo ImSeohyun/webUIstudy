@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+
+   /*
+       구현
+   */
+  var current = document.getElementById("quantity");
+  console.log(current);
+  function up(){
+    console.log();
+    current++;
+    
+  }
+  function down(){
+    if(current>1){
+        current--;
+    }
+  }
+
+
+</script>
+</head>
+<body>
+갯수<input type="text" name="quantity"  id="quantity" value="1">
+<button id="up" onclick="up()">+</button><button id="down" onclick="down()">-</button>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+
+  var n = prompt("정수값을 입력하시오.");
+
+  if(n%3==0){
+    if(n%5==0){
+      if(n%7==0){
+        console.log("입력값:",n, "foo bar baz");  
+      }else{
+        console.log("입력값:",n, "foo bar");  
+      }
+    }else if(n%7==0){
+      console.log("입력값:",n, "foo baz");  
+    }else{
+      console.log("입력값:",n, "foo");
+    }
+  }else if(n%5==0){
+    if(n%7==0){
+      console.log("입력값:",n, "bar baz");  
+    }else{
+      console.log("입력값:",n, "bar");  
+    }
+  }else if(n%7==0){
+    console.log("입력값:",n, "baz");  
+  }
+</script>
+</head>
+<body>
+
+</body>
+</html>
